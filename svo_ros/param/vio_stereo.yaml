@@ -129,7 +129,7 @@ ceres_num_imu_frames: 3
 ceres_max_iteration_time: 0.04 # soft limit, set to -1 to deactivate
 publish_marker_scale_backend: 0.5 # set to -1 to deactivate visualization of landmarks
 backend_only_use_corners: false
-backend_scale_stable_thresh: 0.02
+backend_scale_stable_thresh: 0.05
 
 # For Loop Correction
 ransac3d_inlier_percent: 35
