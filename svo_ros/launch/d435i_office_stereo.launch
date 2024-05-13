@@ -1,7 +1,8 @@
 <!-- Launch File for running svo with ceres backend from bag-file -->
 <launch>
 <!-- 内参 参数 -->
-  <arg name="calib_file" default="$(find svo_ros)/param/calib/realsense_stereo.yaml"/>
+  <!-- <arg name="calib_file" default="$(find svo_ros)/param/calib/realsense_stereo.yaml"/> -->
+  <arg name="calib_file" default="$(find svo_ros)/param/calib/my_svo_realsense_stereo.yaml"/>
 
   <!-- SVO node -->
   <node pkg="svo_ros" type="svo_node" name="svo" clear_params="true" output="screen" args="--v=0">

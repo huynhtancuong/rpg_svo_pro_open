@@ -99,7 +99,7 @@ if has_imu:
 
 output_file = 'svo_' + args.kalibr
 print('Writing to {0}.'.format(output_file))
-f = open(output_file, 'w')
+f = open(output_file, 'w+')
 f.write(yaml.dump(S, default_flow_style=None) )
 if has_imu:
     f.write('\n')
